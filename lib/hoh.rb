@@ -19,30 +19,27 @@ def naming_system
   # So, if we have the "Kingdom" node we should be able to "tunnel" into the
   # HoH all the way to Species!
   hash = {
-   portion_1 = {
-      :label=> "Kingdom",
-      :sub_category=> {
-        :label=> "Phylum",
-        :sub_category=> {
-          :label=> "Class"
+   animals = {
+   label: "Kingdom",
+   sub_category: {
+     label: "Phylum",
+     sub_category: {
+       label: "Class",
+       sub_category: {
+          label: "Order",
+          sub_category: {
+            label: "Family",
+            sub_category: {
+              label: "Genus",
+              sub_category: {
+                label: "Species",
+                sub_category: nil
+           }
+          }
         }
       }
-    }
-    portion_2 = {
-      :label=> "Order"
-    }
-
-    portion_3 = {
-      :label=> "Family",
-      :sub_category=> {
-        :label=> "Genus",
-      }
-    }
-
-    portion_4 = {
-      :label=> "Species",
-      :sub_category=> nil
-    }
-  }
+     }
+   }
+ }
 
 end
